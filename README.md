@@ -8,3 +8,46 @@ just a project I wanted to do to make accesssing it easyer to use neutrino api w
 
 Offical github: https://github.com/NeutrinoAPI/neutrino-api-client-urllib/tree/master
 Offical webpage: https://www.neutrinoapi.com/
+
+
+
+current added functionalilty:
+(certian API's take files, that does not work with this)
+Data Tools <br><br>
+ Email Validate --Supported<br>
+ Phone Validate --Supported<br>
+ UA Lookup --Supported<br>
+ Bad Word Filter<br>
+ Convert --Supported<br>
+WWW<br><br>
+ Browser Bot<br>
+ HTML Clean --Supported<br>
+ HTML Extract<br>
+ URL Info<br>
+Telephony<br><br>
+ Phone Verify --Supported<br>
+ SMS Verify<br>
+ Verify Security Code<br>
+ Phone Playback<br>
+★  HLR Lookup<br>
+ Rates<br>
+Geolocation<br><br>
+ IP Info --Supported<br>
+ Geocode Address<br>
+ Geocode Reverse<br>
+Security and Networking<br><br>
+ Domain Lookup<br>
+ Email Verify <br>
+ IP Probe --Supported<br>
+ IP Blocklist --Supported<br>
+ IP Blocklist Download<br>
+ Host Reputation<br>
+E-commerce<br><br>
+ BIN Lookup<br>
+ BIN List Download<br>
+ Currency Convert<br>
+Imaging<br><br>
+ HTML Render<br>
+ Image Resize<br>
+ Image Watermark<br>
+ QR Code<br>
