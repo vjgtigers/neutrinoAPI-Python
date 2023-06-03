@@ -1,0 +1,5 @@
+create a class instance with your userid and token
+ex. user = IpData("<userid>", "<token>")
+then use the class functions to call apis
+ex. user.ipProbe("1.1.1.1")
+ Better docs comming soon.
