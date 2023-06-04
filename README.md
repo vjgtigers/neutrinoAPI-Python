@@ -12,29 +12,29 @@ Offical webpage: https://www.neutrinoapi.com/
 
 
 current added functionalilty:
-(certian API's take files, that does not work with this)
+(certian API's take files, that does not work with this)<br><br>
 Data Tools <br><br>
  Email Validate --Supported<br>
  Phone Validate --Supported<br>
  UA Lookup --Supported<br>
- Bad Word Filter<br>
- Convert --Supported<br>
+ Bad Word Filter --Supported<br>
+ Convert --Supported<br><br>
 WWW<br><br>
- Browser Bot<br>
+ Browser Bot --Supported<br>
  HTML Clean --Supported<br>
- HTML Extract<br>
- URL Info<br>
+ HTML Extract --(PER neutrinoapi.com this api is deprecated and thus will not be supported)<br>
+ URL Info --Supported<br><br>
 Telephony<br><br>
  Phone Verify --Supported<br>
  SMS Verify<br>
  Verify Security Code<br>
  Phone Playback<br>
 ★  HLR Lookup<br>
- Rates<br>
+ Rates<br><br>
 Geolocation<br><br>
  IP Info --Supported<br>
  Geocode Address<br>
- Geocode Reverse<br>
+ Geocode Reverse<br><br>
 Security and Networking<br><br>
  Domain Lookup<br>
  Email Verify <br>
