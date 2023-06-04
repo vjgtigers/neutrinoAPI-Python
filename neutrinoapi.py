@@ -109,8 +109,39 @@ class IpData:
         info = self.infoCreate2((("content", content),("output-type", output_type)))
         return(self.caller(info, "/html-clean"))
 
+    def badWordFilter(self, content, censor_character="", catalog="strict"):
+        info = self.infoCreate2((("content", content),("censor-character", censor_character),("catalog", catalog)))
+        return(self.caller(info, "/bad-word-filter"))
+
+    def browserBot(self, url, timeout='', delay='', selector='', exec='', user_agent='', ignore_certificate_errors=''):
+        info = self.infoCreate2((('url',url),('timeout',timeout),('delay',delay),('selector',selector),('exec',exec),('user-agent',user_agent),('ignore-certificate-errors',ignore_certificate_errors)))
+        return(self.caller(info, "/browser-bot"))
+
+    def urlInfo(self, url, fetch_content='', ignore_certificate_error='', timeout='', retry=''):
+        info = self.infoCreate2((('url',url),('fetch-content',fetch_content),('ignore-certificate-error',ignore_certificate_error),('timeout',timeout),('retry',retry)))
+        return(self.caller(info, "/url-info"))
 
 
-
-
+#print(user.urlInfo("https://deviceatlas.com/blog/list-of-user-agent-strings"))
 #print(json.loads(data)["country-code"])
+
+##stuff to auto biold the functions and stuff so i dont have to do it by hand.
+list2 = ['']
+def creater(list2, name, link):
+    new = ""
+    new2 = "("
+    #for i in list2:
+    new = "='', ".join(list2)
+    new = new.replace("-","_")
+    new += "=''"
+    print("def " + name +"("+ new + "):")
+    for i in list2:
+        new2 += "('"
+        new2 += i 
+        new2 += "',"
+        new2 += i.replace("-", "_")
+        new2 += "),"
+    new2 += ")"
+    print("    info = self.infoCreate2(" + new2 + ")")
+    print("    return(self.caller(info, '" + link + "'))")
+creater(list2, "geocodeAddress", "/geocode-address")
